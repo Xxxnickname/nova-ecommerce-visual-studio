@@ -1,0 +1,202 @@
+{
+  "platforms": [
+    {
+      "id": "shopify",
+      "name": "Shopify",
+      "status": "live",
+      "status_label": "可用",
+      "publishable": true,
+      "image_size": [
+        2048,
+        2048
+      ],
+      "ratio": "1:1",
+      "gallery_ratio": "4:5",
+      "note": "生成 1:1 商品图，可直接发布到 Shopify。",
+      "size_options": [
+        {
+          "id": "square",
+          "label": "1:1 方图",
+          "width": 2048,
+          "height": 2048,
+          "default": true
+        },
+        {
+          "id": "portrait45",
+          "label": "4:5 竖图",
+          "width": 2048,
+          "height": 2560
+        },
+        {
+          "id": "portrait34",
+          "label": "3:4 竖图",
+          "width": 1728,
+          "height": 2304
+        },
+        {
+          "id": "landscape169",
+          "label": "16:9 横幅",
+          "width": 2560,
+          "height": 1440
+        }
+      ],
+      "default_size_id": "square"
+    },
+    {
+      "id": "taobao_tmall",
+      "name": "淘宝 / 天猫",
+      "status": "simulated",
+      "status_label": "模拟",
+      "publishable": true,
+      "image_size": [
+        1200,
+        1200
+      ],
+      "ratio": "1:1",
+      "gallery_ratio": "3:4",
+      "note": "生成 1:1 商品图；发布流程为模拟，不调用真实平台接口。",
+      "size_options": [
+        {
+          "id": "square",
+          "label": "1:1 主图 1200",
+          "width": 1200,
+          "height": 1200,
+          "default": true
+        },
+        {
+          "id": "portrait34",
+          "label": "3:4 商品图 900×1200",
+          "width": 900,
+          "height": 1200
+        },
+        {
+          "id": "detail750",
+          "label": "详情页 750×1000",
+          "width": 750,
+          "height": 1000
+        }
+      ],
+      "default_size_id": "square"
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "status": "soon",
+      "status_label": "筹备中",
+      "publishable": false,
+      "image_size": [
+        2000,
+        2000
+      ],
+      "ratio": "1:1",
+      "gallery_ratio": "1:1",
+      "note": "Amazon 合规主图与导出预设筹备中。",
+      "size_options": [
+        {
+          "id": "square",
+          "label": "1:1 主图 2000",
+          "width": 2000,
+          "height": 2000,
+          "default": true
+        }
+      ],
+      "default_size_id": "square"
+    },
+    {
+      "id": "tiktok_shop",
+      "name": "TikTok Shop",
+      "status": "soon",
+      "status_label": "筹备中",
+      "publishable": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "ratio": "1:1",
+      "gallery_ratio": "9:16",
+      "note": "TikTok Shop 商品卡与竖版素材筹备中。",
+      "size_options": [
+        {
+          "id": "square",
+          "label": "1:1 商品卡",
+          "width": 1080,
+          "height": 1080,
+          "default": true
+        },
+        {
+          "id": "portrait34",
+          "label": "3:4 竖图",
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "portrait916",
+          "label": "9:16 竖屏",
+          "width": 1080,
+          "height": 1920
+        }
+      ],
+      "default_size_id": "square"
+    },
+    {
+      "id": "jd",
+      "name": "京东",
+      "status": "soon",
+      "status_label": "筹备中",
+      "publishable": false,
+      "image_size": [
+        1200,
+        1200
+      ],
+      "ratio": "1:1",
+      "gallery_ratio": "3:4",
+      "note": "京东主图与详情图规格筹备中。",
+      "size_options": [
+        {
+          "id": "square",
+          "label": "1:1 主图 1200",
+          "width": 1200,
+          "height": 1200,
+          "default": true
+        },
+        {
+          "id": "portrait34",
+          "label": "3:4 商品图",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "default_size_id": "square"
+    },
+    {
+      "id": "pinduoduo",
+      "name": "拼多多",
+      "status": "soon",
+      "status_label": "筹备中",
+      "publishable": false,
+      "image_size": [
+        1200,
+        1200
+      ],
+      "ratio": "1:1",
+      "gallery_ratio": "3:4",
+      "note": "拼多多主图与详情图规格筹备中。",
+      "size_options": [
+        {
+          "id": "square",
+          "label": "1:1 主图 1200",
+          "width": 1200,
+          "height": 1200,
+          "default": true
+        },
+        {
+          "id": "portrait34",
+          "label": "3:4 商品图",
+          "width": 900,
+          "height": 1200
+        }
+      ],
+      "default_size_id": "square"
+    }
+  ]
+}

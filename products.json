@@ -1,0 +1,374 @@
+[
+  {
+    "sku": "SKU-001",
+    "title": "秋冬加厚毛毯 · 米白",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：法兰绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：米白，平铺收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "法兰绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "秋冬加厚毛毯 · 米白 | 加厚保暖 法兰绒",
+    "seo_description": "秋冬加厚毛毯 · 米白，150×200cm，法兰绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "129.00",
+    "compare_at_price": "168.00",
+    "cost": "45.00",
+    "stock": 32,
+    "weight_kg": 1.2,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-002",
+    "title": "秋冬加厚毛毯 · 焦糖棕",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：法兰绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：焦糖棕，平铺收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "法兰绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "秋冬加厚毛毯 · 焦糖棕 | 加厚保暖 法兰绒",
+    "seo_description": "秋冬加厚毛毯 · 焦糖棕，150×200cm，法兰绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "129.00",
+    "compare_at_price": "168.00",
+    "cost": "45.00",
+    "stock": 8,
+    "weight_kg": 1.2,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-003",
+    "title": "法兰绒毛毯 · 雾霾蓝",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：法兰绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：雾霾蓝，平铺收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "法兰绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "法兰绒毛毯 · 雾霾蓝 | 加厚保暖 法兰绒",
+    "seo_description": "法兰绒毛毯 · 雾霾蓝，150×200cm，法兰绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "149.00",
+    "compare_at_price": "194.00",
+    "cost": "52.00",
+    "stock": 21,
+    "weight_kg": 1.3,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-004",
+    "title": "珊瑚绒盖毯 · 奶油白",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：珊瑚绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：米白，叠放收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "珊瑚绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "珊瑚绒盖毯 · 奶油白 | 加厚保暖 珊瑚绒",
+    "seo_description": "珊瑚绒盖毯 · 奶油白，150×200cm，珊瑚绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "99.00",
+    "compare_at_price": "129.00",
+    "cost": "38.00",
+    "stock": 3,
+    "weight_kg": 0.9,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-005",
+    "title": "双层拉舍尔毛毯",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：拉舍尔绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：焦糖棕，叠放收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "拉舍尔绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "双层拉舍尔毛毯 | 加厚保暖 拉舍尔绒",
+    "seo_description": "双层拉舍尔毛毯，150×200cm，拉舍尔绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "199.00",
+    "compare_at_price": "259.00",
+    "cost": "68.00",
+    "stock": 15,
+    "weight_kg": 1.8,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 40,
+    "packed_width": 30,
+    "packed_height": 15,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-006",
+    "title": "秋冬加厚毛毯 · 燕麦色",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：法兰绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：米白，平铺收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "法兰绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "秋冬加厚毛毯 · 燕麦色 | 加厚保暖 法兰绒",
+    "seo_description": "秋冬加厚毛毯 · 燕麦色，150×200cm，法兰绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "139.00",
+    "compare_at_price": "181.00",
+    "cost": "48.00",
+    "stock": 12,
+    "weight_kg": 1.2,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-007",
+    "title": "午睡毯 · 雾霾蓝",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：珊瑚绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：雾霾蓝，叠放收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "珊瑚绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "午睡毯 · 雾霾蓝 | 加厚保暖 珊瑚绒",
+    "seo_description": "午睡毯 · 雾霾蓝，150×200cm，珊瑚绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "119.00",
+    "compare_at_price": "155.00",
+    "cost": "42.00",
+    "stock": 18,
+    "weight_kg": 1.0,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-008",
+    "title": "沙发盖毯 · 焦糖棕",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：法兰绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：焦糖棕，平铺收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "法兰绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "沙发盖毯 · 焦糖棕 | 加厚保暖 法兰绒",
+    "seo_description": "沙发盖毯 · 焦糖棕，150×200cm，法兰绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "159.00",
+    "compare_at_price": "207.00",
+    "cost": "55.00",
+    "stock": 10,
+    "weight_kg": 1.4,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-009",
+    "title": "加厚法兰绒 · 米白",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：法兰绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：米白，叠放收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "法兰绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "加厚法兰绒 · 米白 | 加厚保暖 法兰绒",
+    "seo_description": "加厚法兰绒 · 米白，150×200cm，法兰绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "149.00",
+    "compare_at_price": "194.00",
+    "cost": "50.00",
+    "stock": 25,
+    "weight_kg": 1.3,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-010",
+    "title": "冬季保暖毯 · 雾霾蓝",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：法兰绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：雾霾蓝，平铺收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "法兰绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "冬季保暖毯 · 雾霾蓝 | 加厚保暖 法兰绒",
+    "seo_description": "冬季保暖毯 · 雾霾蓝，150×200cm，法兰绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "169.00",
+    "compare_at_price": "220.00",
+    "cost": "58.00",
+    "stock": 14,
+    "weight_kg": 1.5,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-011",
+    "title": "轻奢绒毯 · 奶油白",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：仿兔绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：米白，平铺收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "仿兔绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "轻奢绒毯 · 奶油白 | 加厚保暖 仿兔绒",
+    "seo_description": "轻奢绒毯 · 奶油白，150×200cm，仿兔绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "189.00",
+    "compare_at_price": "246.00",
+    "cost": "65.00",
+    "stock": 9,
+    "weight_kg": 1.6,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 35,
+    "packed_width": 25,
+    "packed_height": 8,
+    "packed_unit": "CENTIMETERS"
+  },
+  {
+    "sku": "SKU-012",
+    "title": "双面绒毯 · 焦糖棕",
+    "description_html": "<h2>产品特点</h2>\n<ul>\n<li>面料：双面绒，触感柔软，亲肤不刺激</li>\n<li>尺寸：150 × 200 cm，单人/双人沙发均适用</li>\n<li>工艺：四周包边锁边，不易脱线</li>\n<li>颜色：焦糖棕，叠放收纳方便</li>\n</ul>\n<h2>适用场景</h2>\n<p>客厅沙发、卧室床尾、办公室午睡、露营与旅行。</p>\n<h2>护理说明</h2>\n<p>30°C 以下机洗，轻柔模式；不可漂白；低温烘干或阴干。</p>",
+    "vendor": "示例品牌",
+    "product_type": "Blanket",
+    "tags": [
+      "毛毯",
+      "秋冬",
+      "加厚",
+      "双面绒",
+      "家居",
+      "沙发毯"
+    ],
+    "seo_title": "双面绒毯 · 焦糖棕 | 加厚保暖 双面绒",
+    "seo_description": "双面绒毯 · 焦糖棕，150×200cm，双面绒面料，包边锁边，适合沙发、卧室与午睡。",
+    "price": "209.00",
+    "compare_at_price": "272.00",
+    "cost": "72.00",
+    "stock": 6,
+    "weight_kg": 1.9,
+    "status": "DRAFT",
+    "images": [
+      "samples/demo-product.png"
+    ],
+    "category": "gid://shopify/TaxonomyCategory/hg-15-1-4",
+    "packed_length": 40,
+    "packed_width": 30,
+    "packed_height": 15,
+    "packed_unit": "CENTIMETERS"
+  }
+]

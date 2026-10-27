@@ -1,0 +1,14 @@
+{
+  "scene": "通透窗边，薄纱窗帘、浅木地板、 minimal 陈设",
+  "composition": "窗户线条与商品形成平衡，保留呼吸感",
+  "id": "window",
+  "lighting": "柔和自然逆侧光，轻微空气感，保留材质层次",
+  "description": "窗边自然光下的生活方式画面",
+  "name": "窗边自然光",
+  "camera": "35mm 中景，低机位略仰拍",
+  "output": "4:5 竖版，2K，真实光影",
+  "negative": "人物、文字、水印、强烈逆光、死黑、商品变色、物体穿模",
+  "product_position": "商品位于窗边座椅或地板上，形态完整，光线勾勒轮廓",
+  "mood": "清爽、明亮、自然",
+  "category": "home_textile"
+}

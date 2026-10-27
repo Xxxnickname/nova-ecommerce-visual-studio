@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1e9">
+  <title>NOVA · 商品自动化中台</title>
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="sidebar">
+      <a class="brand" href="#dashboard" aria-label="返回总览">
+        <span class="brand-mark">N</span>
+        <span><strong>NOVA</strong><small>商品自动化中台</small></span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <button class="nav-item" data-view="dashboard"><span class="nav-icon">◫</span>总览</button>
+        <button class="nav-item" data-view="products"><span class="nav-icon">◇</span>商品</button>
+        <button class="nav-item" data-view="tasks"><span class="nav-icon">↻</span>任务</button>
+        <button class="nav-item" data-view="studio"><span class="nav-icon">✦</span>生图工坊</button>
+        <button class="nav-item" data-view="agent"><span class="nav-icon">◎</span>Agent 助手</button>
+        <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span>设置</button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="local-status"><span class="dot"></span><span>本地运行 · 127.0.0.1</span></div>
+        <p>数据与密钥只保存在本机。</p>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">ECOMMERCE OPERATIONS</p>
+          <h1 id="page-title">运营总览</h1>
+        </div>
+        <div class="top-actions">
+          <span class="health-chip" id="health-chip"><span class="dot"></span>连接中</span>
+          <button class="btn btn-quiet" id="report-btn">发送日报</button>
+        </div>
+      </header>
+
+      <section class="view" id="view-dashboard" aria-labelledby="page-title">
+        <div class="hero card">
+          <div>
+            <p class="eyebrow">WORKFLOW, NOT JUST GENERATION</p>
+            <h2>从一张图，到商品真正上架。</h2>
+            <p class="hero-copy">生成商品图、转为商品草稿、补全资料并一键上架。</p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-go="studio">开始生图</button>
+              <button class="btn" data-go="products">查看商品</button>
+            </div>
+          </div>
+          <div class="hero-orbit" aria-hidden="true"><span>SKU</span><span>PROMPT</span><span>IMAGE</span><span>LIVE</span></div>
+        </div>
+        <div class="metrics" id="metrics"></div>
+        <div class="two-col">
+          <article class="card">
+            <div class="section-head"><div><p class="eyebrow">RECENT</p><h3>最近任务</h3></div><button class="link-btn" data-go="products">商品中心 →</button></div>
+            <div id="dashboard-tasks" class="list-stack"></div>
+          </article>
+          <article class="card">
+            <div class="section-head"><div><p class="eyebrow">OUTPUT</p><h3>最新生图</h3></div><button class="link-btn" data-go="studio">进入工坊 →</button></div>
+            <div id="dashboard-images" class="mini-gallery"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-products" hidden>
+        <div class="toolbar">
+          <div class="search-wrap"><input id="product-search" type="search" placeholder="搜索 SKU、商品名" aria-label="搜索商品"></div>
+          <select id="product-filter" aria-label="筛选状态"><option value="">全部状态</option><option value="live">已上架</option><option value="draft">商品草稿</option></select>
+        </div>
+        <div class="card table-card">
+          <div class="table-scroll">
+            <table>
+              <thead><tr><th>商品</th><th>售价</th><th>库存</th><th>平台状态</th><th>更新时间</th><th class="right">操作</th></tr></thead>
+              <tbody id="product-rows"></tbody>
+            </table>
+          </div>
+          <div id="products-empty" class="empty" hidden>没有匹配的商品</div>
+        </div>
+      </section>
+
+      <section class="view" id="view-tasks" hidden>
+        <div class="section-head"><div><p class="eyebrow">TASK CENTER</p><h3>生图、发布与回滚都在这里留痕</h3></div><button class="btn btn-small" id="tasks-refresh" type="button">刷新状态</button></div>
+        <div class="metrics" id="task-metrics"></div>
+        <div class="task-center-grid">
+          <article class="card">
+            <div class="section-head"><div><p class="eyebrow">IMAGE JOBS</p><h3>生图任务</h3></div><span class="hint">失败任务可原参重试</span></div>
+            <div id="job-list" class="list-stack"></div>
+          </article>
+          <article class="card">
+            <div class="section-head"><div><p class="eyebrow">OPERATIONS</p><h3>商品与发布任务</h3></div><span class="hint">改价任务可回滚</span></div>
+            <div id="task-list" class="list-stack"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-studio" hidden>
+
+        <article class="card studio-input-card">
+          <div class="section-head">
+            <div><p class="eyebrow">INPUT</p><h3>商品、卖点与素材</h3></div>
+            <span class="hint">一次填完，生成 12 页提示词；确认后再按方案出图</span>
+          </div>
+
+          <div class="input-groups">
+            <section class="input-group">
+              <div class="group-head"><span>01</span><div><strong>商品</strong><small>AI 识别或直接选</small></div></div>
+              <label><span class="label-head">商品具体信息 <span class="badge badge-conditional">AI 识别时必填</span></span><textarea id="studio-product-desc" rows="2" placeholder="例如：酒红色丝绒口红，金色管身，滋润不拔干"></textarea></label>
+              <div class="mode-switch" role="tablist">
+                <button class="mode-btn active" type="button" id="mode-ai" data-mode="ai">AI 识别</button>
+                <button class="mode-btn" type="button" id="mode-manual" data-mode="manual">直接选择</button>
+              </div>
+              <div id="ai-classify-panel">
+                <div class="inline-actions classify-actions"><button class="btn" id="classify-btn" type="button">识别商品类型</button><span class="hint" id="classify-status">描述商品后自动匹配类型</span></div>
+              </div>
+              <div id="manual-classify-panel" hidden>
+                <label><span class="label-head">产品类型 <span class="badge badge-required">必填</span></span><select id="manual-category"><option value="">请选择产品类型</option></select></label>
+              </div>
+              <div class="category-result" id="category-result" hidden><strong id="category-name"></strong><span id="category-reason"></span></div>
+              
+            </section>
+
+            <section class="input-group">
+              <div class="group-head"><span>02</span><div><strong>卖点与调性</strong><small>决定提示词怎么写</small></div></div>
+              <div class="rail-grid">
+                <label><span class="label-head">目标人群</span><input id="plan-audience" placeholder="租房党、年轻家庭"></label>
+                <label><span class="label-head">整体风格</span><input id="plan-style" placeholder="日系轻生活、奶油白"></label>
+              </div>
+              <label><span class="label-head">产品卖点 <span class="badge badge-optional">多条用顿号分隔</span></span><textarea id="plan-selling-points" rows="2" placeholder="即热出水、净化过滤、小体积免安装"></textarea></label>
+              <label><span class="label-head">参考图描述</span><textarea id="plan-reference-note" rows="2" placeholder="窗边自然光、木质桌面、干净家居空间"></textarea></label>
+              
+              <details class="rail-details" open>
+                <summary>风格参考图 · 选填（只参考背景与光线）</summary>
+                <div class="style-ref-grid" id="style-ref-grid"></div>
+              </details>
+            </section>
+
+            <section class="input-group">
+              <div class="group-head"><span>03</span><div><strong>素材与参数</strong><small>决定图怎么出</small></div></div>
+              <div class="upload-head"><span class="label-head">产品实拍图 <span class="badge badge-required">按方案出图必填</span></span><span class="hint" id="upload-name">请先确定商品类型</span></div>
+              <div class="upload-zone" id="upload-zone" tabindex="0" role="button" aria-label="上传产品实拍图">
+                <div class="reference-thumb" id="reference-thumb">待上传</div>
+                <div class="upload-copy"><strong id="upload-title">上传一张产品实拍图</strong><small>JPG / PNG / WebP</small></div>
+                <button class="btn btn-small" type="button" id="upload-button">选择图片</button>
+                <input id="upload-input" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+              </div>
+              <div class="form-grid">
+                <label><span class="label-head">生成模型 <span class="badge badge-required">必填</span></span><select id="studio-model"></select></label>
+                <label><span class="label-head">生成分辨率 <span class="badge badge-required">必填</span></span><select id="studio-resolution"></select></label>
+              </div>
+              <div class="form-grid">
+                <label><span class="label-head">发布平台 <span class="badge badge-required">必填</span></span><select id="studio-platform"></select></label>
+                <label><span class="label-head">输出尺寸 <span class="badge badge-required">必填</span></span><select id="studio-size"></select></label>
+              </div>
+              <div class="platform-note" id="platform-note">Shopify：生成 1:1 商品图，可直接发布。</div>
+              <div class="form-grid">
+                <label><span class="label-head">图片模板 <span class="badge badge-required">必填</span></span><select id="studio-template" disabled><option value="">先确定商品类型</option></select></label>
+                <label><span class="label-head">模板风格 <span class="badge badge-optional">选填</span></span><select id="studio-style" disabled><option value="">先确定商品类型</option></select></label>
+              </div>
+              <label><span class="label-head">场景 <span class="badge badge-optional">选填</span></span><select id="studio-scene" disabled><option value="">先确定商品类型</option></select></label>
+              <label><span class="label-head">页面比例</span><select id="plan-ratio-mode"><option value="industry" selected>主图 1:1 + 详情页 4:5</option><option value="detail">全部 4:5</option><option value="main">全部 1:1</option></select></label>
+              <label id="custom-scene-label" hidden><span class="label-head">自定义场景</span><input id="studio-scene-custom" placeholder="例如：浅色木桌、晨光、干花"></label>
+              
+              <details class="rail-details">
+                <summary>补充信息 · 全部选填</summary>
+                <label>品牌 / 系列名 <input id="studio-brand-name" placeholder="没有品牌可留空"></label>
+                <label>必须保留什么<input id="studio-must-keep" placeholder="管身颜色、logo位置、包装文字"></label>
+                <label>场景/道具补充<textarea id="studio-extra-props" rows="2" placeholder="大理石台面、花瓣、水珠"></textarea></label>
+                <label>不要出现<textarea id="studio-avoid" rows="2" placeholder="人物、手模、额外产品、虚构文字"></textarea></label>
+              </details>
+            </section>
+          </div>
+
+          <div class="input-actions">
+            <button class="btn btn-primary" id="plan-generate-btn" type="button">生成 12 页方案</button>
+            <button class="btn" id="plan-sample-btn" type="button">恢复示例</button>
+            <label class="vision-toggle"><input id="plan-use-vision" type="checkbox" checked> <span>让 AI 看实拍图写提示词</span></label>
+            <span class="hint" id="plan-status">12 页：5 张主图 + 7 张详情页</span>
+            <input id="plan-product-type" type="hidden">
+          </div>
+        </article>
+
+        <article class="card plan-stage-card">
+          <div class="section-head">
+            <div><p class="eyebrow">PROMPT PLAN</p><h3>12 页提示词方案</h3></div>
+            <div class="inline-actions"><span class="hint" id="plan-result-meta">填好上方信息后点「生成 12 页方案」</span><button class="btn btn-small" id="plan-copy-all" type="button" hidden>复制全部</button></div>
+          </div>
+          <div class="plan-empty" id="plan-empty">
+            <strong>还没有方案</strong>
+            <p>上面填好商品、卖点与实拍图，点「生成 12 页方案」，这里会列出 5 张主图 + 7 张详情页的完整提示词。</p>
+          </div>
+          <div class="plan-workbench" id="plan-workbench" hidden>
+            <div class="plan-pager">
+                <button class="pager-btn" id="plan-prev" type="button" aria-label="上一页">‹</button>
+                <div class="pager-label"><strong id="plan-page-no">1 / 12</strong></div>
+                <button class="pager-btn" id="plan-next" type="button" aria-label="下一页">›</button>
+              </div>
+            <div class="plan-detail" id="plan-detail"></div>
+          </div>
+          <footer class="plan-run-bar">
+            <div class="run-summary">
+              <strong>按方案出图</strong>
+              <small id="plan-run-meta">生成方案后，可一键把 12 页提示词 + 实拍图交给 Seedream</small>
+            </div>
+            <div class="inline-actions">
+              <button class="btn" id="plan-run-single" type="button" disabled>只出当前页</button>
+              <button class="btn btn-primary" id="plan-run-suite" type="button" disabled>按方案出 12 张</button>
+            </div>
+          </footer>
+          <details class="run-details">
+            <summary>出图设置与提示词</summary>
+            <div class="mode-switch" id="generation-mode-switch">
+              <button class="mode-btn active" type="button" data-generation-mode="single">单图</button>
+              <button class="mode-btn" type="button" data-generation-mode="suite">12 张套图</button>
+            </div>
+            <div class="platform-note" id="suite-note" hidden>套图将连续生成 12 张统一风格图片；信息图先出无文字背景，再由系统叠加安全边距文字。约 10–18 分钟。</div>
+            <div id="suite-plan-block" hidden>
+              <div class="inline-actions"><button class="btn" id="suite-plan-btn" type="button">查看 12 张套图提示词</button></div>
+              <div id="suite-plan-list" class="suite-plan-list"></div>
+            </div>
+            <div id="single-prompt-block">
+              <div class="inline-actions">
+                <button class="btn" id="prompt-btn" type="button" disabled>生成 9 层提示词</button>
+                <span class="hint" id="prompt-source">先确定商品类型</span>
+              </div>
+              <label><span class="label-head">提示词（可编辑）</span><textarea id="studio-prompt" rows="5" placeholder="生成后可以继续修改，再点击生成商品图"></textarea></label>
+            </div>
+            <div class="inline-actions">
+              <button class="btn" id="generate-btn" type="button" disabled>生成商品图</button>
+              <button class="btn" id="copy-prompt-btn" type="button">复制提示词</button>
+            </div>
+            <div class="job-status" id="job-status" hidden></div>
+          </details>
+        </article>
+
+        <div class="studio-result-grid">
+          <article class="card preview-card">
+            <div class="section-head"><div><p class="eyebrow">PREVIEW</p><h3>生成结果</h3></div><span class="hint" id="preview-meta">等待生成</span></div>
+            <div class="preview" id="image-preview"><div class="preview-placeholder"><span>✦</span><p>新图会出现在这里</p></div></div>
+            <div class="preview-actions" id="preview-actions" hidden>
+              <button class="btn btn-primary" id="save-draft-btn" type="button">保存为商品草稿</button>
+              <button class="btn" id="regenerate-btn" type="button">重新生成</button>
+            </div>
+            <div class="job-status" id="draft-status" hidden></div>
+          </article>
+          <article class="card">
+            <div class="section-head"><div><p class="eyebrow">STAGING</p><h3>生成图暂存区</h3></div><span class="hint" id="gallery-count"></span></div>
+            <div class="image-gallery" id="studio-gallery"></div>
+          </article>
+        </div>
+      </section>
+
+
+      <section class="view" id="view-agent" hidden>
+        <article class="card agent-card">
+          <div class="agent-head">
+            <div><p class="eyebrow">TOOL-CALLING AGENT</p><h2>用一句话驱动商品流程</h2></div>
+            <span class="tag">DeepSeek · Function Calling</span>
+          </div>
+          <div class="suggestions" id="agent-suggestions">
+            <button>查一下 SKU-001 的库存</button><button>把 SKU-003 改到 130 元</button><button>同步 SKU-006 到 Shopify</button>
+          </div>
+          <div class="chat" id="agent-chat" aria-live="polite">
+            <div class="message assistant"><div class="message-role">NOVA Agent</div><div>可以查询商品、改价、上架和查看库存。高危操作会走审批或明确提示。</div></div>
+          </div>
+          <form class="chat-input" id="agent-form"><input id="agent-input" placeholder="例如：把 SKU-002 改到 139 元" autocomplete="off"><button class="btn btn-primary" type="submit">发送</button></form>
+        </article>
+      </section>
+      <section class="view" id="view-settings" hidden>
+        <div class="settings-grid">
+          <form class="card settings-form" id="settings-form">
+            <div class="section-head"><div><p class="eyebrow">LOCAL CONFIG</p><h3>API 与店铺配置</h3></div><span class="tag">仅本机</span></div>
+            <div class="settings-section">
+              <h4>Seedream / 火山方舟</h4>
+              <label>API Key<input id="ark_key" type="password" autocomplete="off"></label>
+              <div class="form-grid"><label>Base URL<input id="ark_base"></label><label>图像模型<input id="ark_model"></label></div>
+            </div>
+            <div class="settings-section">
+              <h4>DeepSeek</h4>
+              <label>API Key<input id="deepseek_key" type="password" autocomplete="off"></label>
+              <div class="form-grid"><label>Base URL<input id="deepseek_base"></label><label>模型<input id="deepseek_model"></label></div>
+              <button class="btn btn-small" type="button" id="test-deepseek">测试连接</button>
+            </div>
+            <div class="settings-section">
+              <h4>Shopify</h4>
+              <label>店铺域名<input id="shopify_store" placeholder="your-store.myshopify.com"></label>
+              <label>Admin API Token<input id="shopify_token" type="password" autocomplete="off"></label>
+              <button class="btn btn-small" type="button" id="test-shopify">测试店铺连接</button>
+            </div>
+            <div class="settings-section">
+              <h4>飞书通知</h4>
+              <label>群机器人 Webhook<input id="feishu_webhook" type="password" autocomplete="off"></label>
+              <p class="hint">留空表示不发送通知；密钥写入本机 settings.json，不进入代码库。</p>
+            </div>
+            <div class="settings-actions"><button class="btn btn-primary" type="submit">保存全部设置</button><span id="settings-status" class="hint"></span></div>
+          </form>
+          <aside class="card guide-card">
+            <p class="eyebrow">DEPLOY</p><h3>换一台电脑也能用</h3>
+            <ol><li>复制整个项目文件夹。</li><li>首次双击 <code>启动电商中台.vbs</code>，自动安装本机依赖。</li><li>在设置页填入本机 API Key。</li><li>之后每次双击即可启动。</li></ol>
+            <div class="note">每个员工使用自己的密钥；数据库与生成图留在本地。</div>
+            <div class="settings-section">
+              <h4>系统自检</h4>
+              <button class="btn btn-small" id="system-check-btn" type="button">运行完整性检查</button>
+              <p class="hint">检查数据库、目录权限、模板、模型、平台与 API 配置，不读取或显示密钥。</p>
+              <div id="system-check-results" class="list-stack"></div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="modal" hidden>
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-head"><div><p class="eyebrow">PRODUCT</p><h2 id="modal-title">商品详情</h2></div><button class="icon-btn" id="modal-close" aria-label="关闭">×</button></div>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div class="image-viewer" id="image-viewer" hidden>
+    <button class="viewer-close" id="viewer-close" type="button" aria-label="关闭大图">×</button>
+    <button class="viewer-nav viewer-prev" id="viewer-prev" type="button" aria-label="上一张">‹</button>
+    <div class="viewer-stage">
+      <img id="viewer-image" alt="生成图片大图">
+      <div class="viewer-caption" id="viewer-caption"></div>
+    </div>
+    <button class="viewer-nav viewer-next" id="viewer-next" type="button" aria-label="下一张">›</button>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/assets/app.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

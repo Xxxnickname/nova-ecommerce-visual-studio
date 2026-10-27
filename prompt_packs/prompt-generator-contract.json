@@ -1,0 +1,91 @@
+{
+  "version": "3.0",
+  "purpose": "把商品资料转换为逐页可执行的电商详情页提示词包",
+  "input_schema": {
+    "product_name": "string",
+    "category": "string",
+    "platform": "string",
+    "target_audience": [
+      "string"
+    ],
+    "conversion_driver": "visual | pain | rational | trust | emotion",
+    "top_selling_points": [
+      "string"
+    ],
+    "verified_evidence": [
+      "string"
+    ],
+    "pending_claims": [
+      "string"
+    ],
+    "visual_direction": "string",
+    "brand_palette": {
+      "primary": "hex",
+      "secondary": "hex",
+      "accent": "hex",
+      "text": "hex"
+    },
+    "color_temperature": "string",
+    "reference_images": [
+      "absolute_path"
+    ],
+    "page_count": "integer",
+    "aspect_ratio": "4:5",
+    "resolution": "2K",
+    "text_policy": "short_direct_text_plus_post_overlay"
+  },
+  "output_schema": {
+    "campaign_id": "string",
+    "campaign_lock": "string",
+    "pages": [
+      {
+        "page_id": "string",
+        "page_role": "string",
+        "buyer_question": "string",
+        "decision_goal": "string",
+        "aspect_ratio": "string",
+        "resolution": "string",
+        "product_position": "string",
+        "scene": "string",
+        "composition": "string",
+        "camera": "string",
+        "lighting": "string",
+        "materials": "string",
+        "copy": {
+          "title": "string",
+          "subtitle": "string",
+          "tags": "string",
+          "overlay_body": "string"
+        },
+        "text_zone": "string",
+        "render_policy": "string",
+        "evidence": "string",
+        "negative_constraints": "string",
+        "qa_gates": [
+          "product_identity",
+          "text_accuracy",
+          "layout_safety",
+          "color_lock",
+          "camera_variety",
+          "compliance",
+          "production_usable"
+        ],
+        "final_prompt": "string"
+      }
+    ]
+  },
+  "validation_rules": [
+    "每页只能有一个主要买家问题",
+    "每页必须指定产品占比与文案安全区",
+    "全套至少使用4种镜头景别和3种背景材质",
+    "主标题不得超过8个汉字，直接渲染文字总量不超过25个汉字",
+    "未提供证据的时长、遮瑕、对比、认证和检测数据不得写成事实",
+    "每页 final_prompt 必须完整包含 Campaign Lock 与 Reference Role",
+    "失败时只重做单页，不整套重生成"
+  ],
+  "model_policy": {
+    "target": "Seedream 5.0 Lite",
+    "forbidden_default": "Seedream 5.0 Pro",
+    "note": "当前 Ark 账号模型目录未显示 Lite，生成前必须确认准确 ID；不得用 Pro 代替。"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "ark_key": "",
+  "ark_base": "https://ark.cn-beijing.volces.com/api/v3",
+  "ark_model": "doubao-seedream-5-0-flash-260915",
+  "deepseek_key": "",
+  "deepseek_base": "https://api.deepseek.com",
+  "deepseek_model": "deepseek-flash",
+  "shopify_store": "",
+  "shopify_token": "",
+  "feishu_webhook": "",
+  "approval_threshold": 5.0
+}

@@ -1,0 +1,14 @@
+{
+  "id": "generic_white_bg",
+  "name": "通用白底主图",
+  "description": "干净通用的电商首图模板",
+  "category": "generic",
+  "scene": "纯白无缝摄影棚背景，轻微接触阴影",
+  "lighting": "柔和均匀柔光，产品轮廓清晰，材质细节可辨",
+  "camera": "50mm 中景，平视略俯拍，完整入镜",
+  "composition": "主体居中，四周等距留白",
+  "mood": "干净、真实、商业目录感",
+  "negative": "人物、文字、水印、额外物体、变形、过曝、失焦、低清晰度",
+  "output": "4:5 竖版，2K，高细节",
+  "product_position": "商品完整居中，四角不被裁切"
+}

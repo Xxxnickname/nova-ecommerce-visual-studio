@@ -1,0 +1,14 @@
+{
+  "scene": "低饱和卧室，棉麻床品、木质床头、柔和窗帘",
+  "composition": "床面形成引导线，商品位于视觉中心",
+  "id": "bedroom",
+  "lighting": "清晨侧光，柔和高光，轻盈阴影",
+  "description": "卧室床尾的安静氛围场景",
+  "name": "卧室场景",
+  "camera": "50mm 中景，略高于床面的俯拍",
+  "output": "4:5 竖版，2K，细腻织物纹理",
+  "negative": "人物、文字、水印、过曝、商品变形、纹理丢失、额外商品",
+  "product_position": "商品铺在床尾或叠放于床面，边缘完整",
+  "mood": "安静、柔软、舒适",
+  "category": "home_textile"
+}

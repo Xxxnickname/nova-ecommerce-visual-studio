@@ -1,0 +1,331 @@
+{
+  "default_category": "generic",
+  "categories": [
+    {
+      "id": "beauty",
+      "name": "美妆护肤",
+      "description": "口红、唇釉、粉底、香水、精华、面霜、眼影、护肤及个护产品",
+      "keywords": [
+        "口红",
+        "唇釉",
+        "唇膏",
+        "粉底",
+        "气垫",
+        "遮瑕",
+        "香水",
+        "精华",
+        "面霜",
+        "乳液",
+        "眼影",
+        "睫毛膏",
+        "眉笔",
+        "腮红",
+        "高光",
+        "卸妆",
+        "洗面奶",
+        "面膜",
+        "防晒",
+        "护肤品",
+        "化妆品",
+        "美妆",
+        "身体乳",
+        "精油"
+      ],
+      "default_template": "beauty_white_bg",
+      "category_guard": "严格保持瓶身、管身、泵头、盖体、膏体、粉体、液面和包装标签的外形、颜色、材质、文字位置与比例，不改变品牌标识和产品结构",
+      "scene_options": [
+        "纯白无缝摄影棚",
+        "米白大理石浴室台面",
+        "香槟金亚克力台座",
+        "清透水景与气泡",
+        "成分原料静物（花瓣、水珠、矿物）",
+        "节日礼盒与丝带",
+        "通勤化妆包与镜面",
+        "柔纱与晨光梳妆台"
+      ],
+      "style_options": [
+        "清透高级",
+        "实验室科技感",
+        "法式优雅",
+        "水光通透",
+        "节日礼赠",
+        "极简杂志感",
+        "自然植萃"
+      ],
+      "suite_template_ids": [
+        "beauty_white_bg",
+        "beauty_podium",
+        "beauty_gift",
+        "beauty_vanity",
+        "beauty_travel",
+        "beauty_texture",
+        "beauty_texture"
+      ]
+    },
+    {
+      "id": "home_textile",
+      "name": "家居织物",
+      "description": "毛毯、盖毯、床品、抱枕、毛巾等家居纺织品",
+      "keywords": [
+        "毛毯",
+        "盖毯",
+        "毯子",
+        "床品",
+        "被子",
+        "枕头",
+        "抱枕",
+        "毛巾",
+        "浴巾",
+        "地毯",
+        "窗帘",
+        "家居",
+        "纺织"
+      ],
+      "default_template": "white_bg",
+      "category_guard": "严格保持织物的颜色、绒面、纹理、包边、厚度、褶皱和尺寸比例，不改变款式与材质",
+      "scene_options": [
+        "纯白摄影棚",
+        "现代客厅沙发",
+        "卧室床尾",
+        "窗边自然光",
+        "浅色布艺沙发特写",
+        "阳光木地板"
+      ],
+      "style_options": [
+        "温暖自然",
+        "清爽简约",
+        "高级质感",
+        "生活方式杂志感",
+        "奶油风"
+      ],
+      "suite_template_ids": [
+        "white_bg",
+        "sofa",
+        "living_room",
+        "bedroom",
+        "window",
+        "detail",
+        "detail"
+      ]
+    },
+    {
+      "id": "apparel",
+      "name": "服装配饰",
+      "description": "服装、鞋履、箱包、帽子、围巾等穿戴类商品",
+      "keywords": [
+        "衣服",
+        "服装",
+        "外套",
+        "衬衫",
+        "T恤",
+        "裙",
+        "裤",
+        "鞋",
+        "靴",
+        "包",
+        "背包",
+        "帽子",
+        "围巾",
+        "腰带",
+        "配饰"
+      ],
+      "default_template": "generic_white_bg",
+      "category_guard": "严格保持服装版型、面料纹理、颜色、缝线、五金、鞋型和包型比例，不改变款式结构",
+      "scene_options": [
+        "纯白摄影棚",
+        "极简试衣间",
+        "城市街拍背景",
+        "生活方式室内场景",
+        "材质细节台面"
+      ],
+      "style_options": [
+        "干净商业",
+        "都市简约",
+        "高级杂志感",
+        "自然生活方式",
+        "潮流街拍"
+      ],
+      "suite_template_ids": [
+        "generic_white_bg",
+        "generic_lifestyle",
+        "generic_promo",
+        "generic_lifestyle",
+        "generic_lifestyle",
+        "generic_detail",
+        "generic_detail"
+      ]
+    },
+    {
+      "id": "food",
+      "name": "食品饮料",
+      "description": "食品、饮料、零食、茶咖啡、保健食品等",
+      "keywords": [
+        "食品",
+        "饮料",
+        "零食",
+        "咖啡",
+        "茶",
+        "酒",
+        "饼干",
+        "巧克力",
+        "糖果",
+        "蜂蜜",
+        "坚果",
+        "奶粉",
+        "保健"
+      ],
+      "default_template": "generic_white_bg",
+      "category_guard": "严格保持包装形状、标签、内容物、颜色、材质和份量结构，不改变产品与包装文字",
+      "scene_options": [
+        "纯白摄影棚",
+        "木质餐桌",
+        "野餐场景",
+        "咖啡店台面",
+        "原料与食材静物",
+        "节日礼盒"
+      ],
+      "style_options": [
+        "食欲诱人",
+        "清新自然",
+        "精品咖啡感",
+        "节日礼赠",
+        "极简商业"
+      ],
+      "suite_template_ids": [
+        "generic_white_bg",
+        "generic_lifestyle",
+        "generic_promo",
+        "generic_lifestyle",
+        "generic_lifestyle",
+        "generic_detail",
+        "generic_detail"
+      ]
+    },
+    {
+      "id": "electronics",
+      "name": "数码电器",
+      "description": "数码产品、小家电、消费电子与智能硬件",
+      "keywords": [
+        "耳机",
+        "音箱",
+        "手机",
+        "电脑",
+        "平板",
+        "相机",
+        "手表",
+        "充电",
+        "电源",
+        "家电",
+        "咖啡机",
+        "吹风机",
+        "剃须刀",
+        "数码",
+        "电子"
+      ],
+      "default_template": "generic_white_bg",
+      "category_guard": "严格保持机身结构、接口、按键、屏幕、材质、颜色和品牌标识位置，不改变产品形态",
+      "scene_options": [
+        "纯白摄影棚",
+        "深色科技台面",
+        "现代办公桌",
+        "家居生活场景",
+        "材质细节特写"
+      ],
+      "style_options": [
+        "科技极简",
+        "专业商务",
+        "未来感",
+        "生活方式",
+        "高级暗调"
+      ],
+      "suite_template_ids": [
+        "generic_white_bg",
+        "generic_lifestyle",
+        "generic_promo",
+        "generic_lifestyle",
+        "generic_lifestyle",
+        "generic_detail",
+        "generic_detail"
+      ]
+    },
+    {
+      "id": "jewelry",
+      "name": "珠宝饰品",
+      "description": "珠宝、戒指、项链、耳饰、腕表与轻奢配饰",
+      "keywords": [
+        "珠宝",
+        "戒指",
+        "项链",
+        "耳环",
+        "耳钉",
+        "手链",
+        "手镯",
+        "腕表",
+        "手表",
+        "钻石",
+        "黄金",
+        "银饰",
+        "饰品",
+        "轻奢"
+      ],
+      "default_template": "generic_white_bg",
+      "category_guard": "严格保持金属色泽、宝石切面、镶嵌结构、链条形态、比例和细节，不改变款式",
+      "scene_options": [
+        "纯白摄影棚",
+        "丝绒展示台",
+        "大理石台面",
+        "肌肤质感背景",
+        "礼盒与缎带",
+        "微距细节"
+      ],
+      "style_options": [
+        "奢华高级",
+        "极简留白",
+        "法式优雅",
+        "复古珠宝",
+        "清冷银调"
+      ],
+      "suite_template_ids": [
+        "generic_white_bg",
+        "generic_lifestyle",
+        "generic_promo",
+        "generic_lifestyle",
+        "generic_lifestyle",
+        "generic_detail",
+        "generic_detail"
+      ]
+    },
+    {
+      "id": "generic",
+      "name": "通用商品",
+      "description": "无法归类或不属于以上类目的商品",
+      "keywords": [],
+      "default_template": "generic_white_bg",
+      "category_guard": "严格保持参考图中的商品外形、颜色、材质、结构、比例、边缘和包装信息，不改变款式",
+      "scene_options": [
+        "纯白无缝摄影棚",
+        "浅灰渐变背景",
+        "原木台面",
+        "现代生活方式场景",
+        "材质细节特写",
+        "节日礼赠场景"
+      ],
+      "style_options": [
+        "干净商业",
+        "清爽简约",
+        "高级质感",
+        "温暖自然",
+        "现代杂志感"
+      ],
+      "suite_template_ids": [
+        "generic_white_bg",
+        "generic_lifestyle",
+        "generic_promo",
+        "generic_lifestyle",
+        "generic_lifestyle",
+        "generic_detail",
+        "generic_detail"
+      ]
+    }
+  ]
+}

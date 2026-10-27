@@ -1,0 +1,108 @@
+{
+  "styles": [
+    {
+      "id": "pearl-floral",
+      "name": "珍珠花瓣美妆",
+      "description": "雾紫珍珠、花瓣与水晶，适合美妆、护肤、礼盒",
+      "category": "beauty",
+      "palette": [
+        "珍珠白",
+        "雾紫",
+        "香槟金"
+      ],
+      "path": "static/style_refs/01-pearl-floral.png",
+      "url": "/assets/style_refs/01-pearl-floral.png"
+    },
+    {
+      "id": "navy-gold",
+      "name": "深蓝鎏金奢华",
+      "description": "深蓝丝绸与香槟金线条，适合高端护肤与香水",
+      "category": "beauty",
+      "palette": [
+        "深海军蓝",
+        "香槟金",
+        "炭黑"
+      ],
+      "path": "static/style_refs/02-navy-gold.png",
+      "url": "/assets/style_refs/02-navy-gold.png"
+    },
+    {
+      "id": "water-glass",
+      "name": "清透水感实验室",
+      "description": "冰蓝水波与玻璃折射，适合补水、清透、科技护肤",
+      "category": "beauty",
+      "palette": [
+        "冰蓝",
+        "透明白",
+        "冷银"
+      ],
+      "path": "static/style_refs/03-water-glass.png",
+      "url": "/assets/style_refs/03-water-glass.png"
+    },
+    {
+      "id": "mineral-crystal",
+      "name": "矿物晶体自然系",
+      "description": "暖米色矿物与天然晶体，适合成分、自然、功效表达",
+      "category": "beauty",
+      "palette": [
+        "暖米白",
+        "砂岩",
+        "透明晶"
+      ],
+      "path": "static/style_refs/04-mineral-crystal.png",
+      "url": "/assets/style_refs/04-mineral-crystal.png"
+    },
+    {
+      "id": "champagne-silk",
+      "name": "香槟金绸缎",
+      "description": "香槟缎面与珍珠光，适合高端礼赠和成熟美妆",
+      "category": "beauty",
+      "palette": [
+        "香槟金",
+        "象牙白",
+        "暖灰"
+      ],
+      "path": "static/style_refs/05-champagne-silk.png",
+      "url": "/assets/style_refs/05-champagne-silk.png"
+    },
+    {
+      "id": "rose-gift",
+      "name": "玫瑰礼赠氛围",
+      "description": "低饱和玫瑰与缎带，适合节日礼盒和女性向产品",
+      "category": "beauty",
+      "palette": [
+        "玫瑰粉",
+        "酒红",
+        "米白"
+      ],
+      "path": "static/style_refs/06-rose-gift.png",
+      "url": "/assets/style_refs/06-rose-gift.png"
+    },
+    {
+      "id": "warm-editorial",
+      "name": "暖白编辑杂志",
+      "description": "暖白纸张与几何光影，适合高级极简和中文排版",
+      "category": "beauty",
+      "palette": [
+        "暖象牙白",
+        "浅沙色",
+        "深棕"
+      ],
+      "path": "static/style_refs/07-warm-editorial.png",
+      "url": "/assets/style_refs/07-warm-editorial.png"
+    },
+    {
+      "id": "dark-botanical",
+      "name": "深绿植物暗调",
+      "description": "深绿叶片与金色微光，适合自然、植物、暗调高级感",
+      "category": "beauty",
+      "palette": [
+        "炭黑绿",
+        "橄榄",
+        "金色"
+      ],
+      "path": "static/style_refs/08-dark-botanical.png",
+      "url": "/assets/style_refs/08-dark-botanical.png"
+    }
+  ]
+}

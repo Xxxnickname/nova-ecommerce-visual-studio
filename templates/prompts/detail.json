@@ -1,0 +1,14 @@
+{
+  "scene": "干净中性背景，无干扰陈设",
+  "composition": "局部填满画面但不裁断关键结构",
+  "id": "detail",
+  "lighting": "侧向柔光突出纹理起伏，弱化阴影",
+  "description": "材质、包边和工艺细节",
+  "name": "细节特写",
+  "camera": "90mm 微距，浅景深，焦点落在材质与包边",
+  "output": "4:5 竖版，2K，微距摄影细节",
+  "negative": "人物、文字、水印、过度锐化、噪点、虚假纹理、失焦、颜色偏移",
+  "product_position": "镜头聚焦商品局部纹理与边缘工艺，结构关系清楚",
+  "mood": "精细、可信、质感突出",
+  "category": "home_textile"
+}

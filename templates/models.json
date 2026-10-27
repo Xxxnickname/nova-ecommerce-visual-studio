@@ -1,0 +1,58 @@
+{
+  "models": [
+    {
+      "id": "doubao-seedream-5-0-pro-260628",
+      "name": "Seedream 5.0 Pro",
+      "tier": "旗舰",
+      "resolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "note": "质量最高，费用最高，适合最终成片"
+    },
+    {
+      "id": "doubao-seedream-5-0-flash-260915",
+      "name": "Seedream 5.0 Flash",
+      "tier": "快速",
+      "resolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "note": "速度优先，适合试稿和批量生成"
+    },
+    {
+      "id": "doubao-seedream-5-0-260128",
+      "name": "Seedream 5.0",
+      "tier": "标准",
+      "resolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "note": "质量与成本平衡"
+    },
+    {
+      "id": "doubao-seedream-4-5-251128",
+      "name": "Seedream 4.5",
+      "tier": "经济",
+      "resolutions": [
+        "1K",
+        "2K",
+        "4K"
+      ],
+      "note": "经济模型，适合批量出图"
+    },
+    {
+      "id": "doubao-seedream-4-0-20260415",
+      "name": "Seedream 4.0",
+      "tier": "经济",
+      "resolutions": [
+        "1K",
+        "2K"
+      ],
+      "note": "低成本测试，文字能力较弱"
+    }
+  ]
+}

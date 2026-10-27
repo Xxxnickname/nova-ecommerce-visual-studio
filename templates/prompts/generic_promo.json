@@ -1,0 +1,14 @@
+{
+  "id": "generic_promo",
+  "name": "促销留白主图",
+  "description": "为活动文案预留空间的商业图",
+  "category": "generic",
+  "scene": "浅色渐变背景或简洁几何台面，少量品牌色道具",
+  "lighting": "柔和轮廓光与均匀补光",
+  "camera": "50mm 中景，平视略俯拍",
+  "composition": "商品偏一侧放置，另一侧留出文案安全区",
+  "mood": "现代、商业、清爽、有活动感",
+  "negative": "人物、文字、水印、杂乱装饰、商品变形、颜色失真、过曝",
+  "output": "4:5 竖版，2K，商业广告摄影",
+  "product_position": "商品完整且不被装饰遮挡，保持品牌正面朝前"
+}

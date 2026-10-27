@@ -1,0 +1,14 @@
+{
+  "id": "generic_detail",
+  "name": "产品细节特写",
+  "description": "材质、工艺与结构细节",
+  "category": "generic",
+  "scene": "干净中性背景，聚焦材质和结构",
+  "lighting": "侧向柔光突出纹理与边缘",
+  "camera": "90mm 微距，浅景深",
+  "composition": "局部填满画面但不裁断关键特征",
+  "mood": "精细、可信、质感突出",
+  "negative": "人物、文字、水印、虚假纹理、过度锐化、噪点、失焦",
+  "output": "4:5 竖版，2K，微距细节摄影",
+  "product_position": "关键材质、边缘和工艺关系清楚"
+}

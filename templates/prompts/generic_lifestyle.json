@@ -1,0 +1,14 @@
+{
+  "id": "generic_lifestyle",
+  "name": "生活方式场景",
+  "description": "现代居家或日常使用氛围",
+  "category": "generic",
+  "scene": "浅色现代生活空间，简洁家具与本商品相关的少量道具",
+  "lighting": "柔和窗光与室内补光，自然阴影",
+  "camera": "35mm 环境视角，平视略俯拍",
+  "composition": "商品为视觉中心，环境提供使用线索",
+  "mood": "真实、自然、松弛、生活方式",
+  "negative": "人物、文字、水印、杂乱背景、商品变形、颜色偏移、额外同类商品",
+  "output": "4:5 竖版，2K，真实摄影质感",
+  "product_position": "商品在使用场景中完整可见，结构不被遮挡"
+}
